@@ -1,10 +1,11 @@
-function show_content(url) {
+function show_content(url, eid='main_body') {
     var xhr = new XMLHttpRequest();
     xhr.onload = function () {
-        document.getElementById('main_body').innerHTML = this.responseText;
+        document.getElementById(eid).innerHTML = this.responseText;
     };
     xhr.open('GET', url);
     xhr.send();
+    document.getElementById(eid).contentWindow.location.reload();
 }
 function go_home() {
     show_content('content/home.html')
@@ -21,6 +22,10 @@ function go_tools() {
 function go_contact() {
     show_content('content/contact.html')
 }
+function show_side_bar() {
+    show_content('content/sidebar.html', eid='side_bar')
+}
 
 go_home()
 
+show_side_bar()
