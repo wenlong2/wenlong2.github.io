@@ -1,0 +1,28 @@
+<div style="font-size: 80%;">
+ 
+  <h1>Paste One Line and Find the Format</h1>
+<p>Only support right-aligned character, integer and float.</p>
+<p>Paste one line of the data in to box the click somewhere else</p>
+  <p><input type="text" id="ipt_row" style="width:90%" onblur="dofind()" value="  SN2011fe  Ia  7.0  12.345  490123"></p> <br>
+  
+<h3 style="color:#006400;">IDL Format: </h3>
+<h3 id=idl_fmt style="color:#006400;"> .</h3>
+<h3 style="color:#0000ff;">R sprintf(), Python file.write(), C printf(), etc. : </h3>
+<h3 id=clike_fmt style="color:#0000ff;"> . </h3>
+<h3 style="color:#ff00ff;">R read.fwf() Format: </h3>
+<h3 id=rfwf_fmt style="color:#ff00ff;"> . </h3>
+<h3 id=element>Elements:  </h3>
+  <h3 id=space_pos>End positions:  </h3>
+
+  
+  <div class='vspace'></div>
+  <hr>
+  <div class='vspace'></div>
+  
+  
+  <h1> Convert Calendar Date (UT) to Julian Date</h1>
+  <p>Year: <input type="number" id="ipt_year" onblur="doconvert()" value=2014> Month: <input type="number" id="ipt_month" onblur="doconvert()" value=11> Day: <input type="number" id="ipt_day" onblur="doconvert()" value=20></p>
+  <p>Hour: <input type="number" id="ipt_hour" onblur="doconvert()" value=23> Minute: <input type="number" id="ipt_minute" onblur="doconvert()" value=02> Second: <input type="number" id="ipt_second" onblur="doconvert()" value=01></p>
+  <h3 id="res_jd">JD:  2456982.4597337963</h3>
+  <h3 id="res_jd2" style="color: blue;">    2456982.4597337963</h3>
+</div>
