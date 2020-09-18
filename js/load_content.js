@@ -26,6 +26,5 @@ function show_side_bar() {
     show_content('content/sidebar.html', eid='side_bar')
 }
 
-go_home()
+go_home();
 
-show_side_bar()
