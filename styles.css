@@ -8,6 +8,11 @@ body {
     background-color:#ecf0f5;
 }
 
+iframe {
+    margin: 0; 
+    display: block;
+}
+
 #header_div {
     display:block;
     width:100%;
